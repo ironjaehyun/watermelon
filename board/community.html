@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦛DREAM HACK</title>
+    <link href="./images/hippo.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="communityboard.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><a href = "../main/front.html">DREAM HACK</a></h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="../main/front.html">HOME</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                    <li><a href="../DREAMBOARD(PROTOTYPE)/dreamboard.html">DREAM BOARD</a></li>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="#">LOG IN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="board">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th>작성자</th>
+                        </tr>
+                    </thead>
+                </table>
+                <tbody>
+                    
+                </tbody>
+        </div>
+
+        <!-- 글 작성 버튼 -->
+        <button class="write-btn" onclick="openModal()">글 작성</button>
+    </div>
+
+
+    <!-- 모달 창 -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>글 작성</h2>
+                <form onsubmit="submitForm(event)">
+                    <label for="title">제목:</label>
+                    <input type="text" id="title" required>
+                    <label for="author">작성자:</label>
+                    <input type="text" id="author" required>
+                    <button type="submit">작성</button>
+                </form>
+            </div>
+        </div>
+
+
+        <script src="communityboard.js"></script>
+        
+</body>
+</html>
